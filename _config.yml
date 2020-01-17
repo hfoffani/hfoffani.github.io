@@ -18,7 +18,7 @@ twitter_username: herchu
 use_math: true
 
 # Everything below here can be ignored, unless you want to change the theme entirely
-theme: jekyll-theme-slate
+theme: minima
 plugins:
   - jekyll-feed
 
