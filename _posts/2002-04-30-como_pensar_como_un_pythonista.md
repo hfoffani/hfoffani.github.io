@@ -2,26 +2,24 @@ _This is my very first blog post from April 2002. I published it blogspot.com an
 
 # Cómo pensar como un pythonista
 
-Esta página es una traducción del artículo *How to think like a Pythonista* de Michael Hudson.
-Las referencias a primera persona en los comentarios se referieren, lógicamente, a él.
+_Esta página es una traducción del artículo **How to think like a Pythonista** de Michael Hudson.
+Las referencias a primera persona en los comentarios se referieren, lógicamente, a él._
 
-En <a href="http://www.aleax.it/">www.aleax.it</a> encontrarán documentación de Python en italiano,
+_En <a href="http://www.aleax.it/">www.aleax.it</a> encontrarán documentación de Python en italiano,
 escrita por Alex Martelli autor original de parte del artículo que aqui reproduzco.
-Puede serles útil si dicho idioma les es mas sencillo de entender que el inglés.
+Puede serles útil si dicho idioma les es mas sencillo de entender que el inglés._
 
---N.de T.
+_--N.de T._
 
 
-Cómo pensar como un Pythonista.
-
-* La Pregunta
-* Mi Respuesta
-* La Respuesta de Alex
-* Un Cliente Satisfecho
+1. TOC
+{:toc}
 
 Hace poco (abril del 2002), un no-iniciado en Python buscaba respuestas en
 comp.lang.python por ciertos extraños comportamientos del lenguaje.
 Dada la recurrencia del error entre los recién llegados a Python, reproduzco aquí la duda y las respuestas.
+
+### La Pregunta
 
 Hola,
 
@@ -73,6 +71,8 @@ fuera mi intuición ¿Cómo podría entrenar mi pensamiento
 sobre el modelo de ejecucion de Python para que mi
 intuicion mejore? ;-)
 
+
+### Mi respuesta
 
 Demás está decir que es la intuicion del interesado la que estuvo en falta, pero el autor lejos está (estuvo) de ser el unico en tener este malentendido.
 
@@ -230,6 +230,7 @@ Alex tomo una estrategia diferente, verbosa, para explicar que Python no copia c
 relatando una anecdota muy bonita sobre una estatua en Boloña y sugieriendo al interesado lecturas de Borges,
 Calvino, Wittgenstein o Korzibsky.
 
+### La respuesta de Alex
 
 > Hola,
 >
@@ -481,10 +482,14 @@ lecturas interesantes.
 
 Alex
 
-El ensayo de /F al que se refería Alex es probablemente éste (e incluso si no lo es, debería usted leerlo.)
-Habla sobre algunos de estos temas en un forma mas tersa.
 
-GvR es Guido van Rossum y /F es Fredrik Lundh --N.de T.
+_El ensayo de /F al que se refería Alex es probablemente éste (e incluso si no lo es, debería usted leerlo.)
+Habla sobre algunos de estos temas en un forma mas tersa._
+
+_GvR es Guido van Rossum y /F es Fredrik Lundh --N.de T._
+
+
+### Un cliente satisfecho
 
 Y solo para probar que valió la pena hacer todo esto, nuestro no-iniciado se transformó en un cliente satisfecho:
 
