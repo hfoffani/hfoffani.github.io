@@ -1,5 +1,3 @@
-_This is my very first blog post from April 2002. I published it blogspot.com and ported here as an historical reference._
-
 # Cómo pensar como un pythonista
 
 _Esta página es una traducción del artículo **How to think like a Pythonista** de Michael Hudson.
@@ -12,7 +10,9 @@ Puede serles útil si dicho idioma les es mas sencillo de entender que el inglé
 _--N.de T._
 
 
-1. TOC
+_January 2020: This is my very first blog post from April 2002. I published it blogspot.com and ported here as an historical reference._
+
+
 {:toc}
 
 Hace poco (abril del 2002), un no-iniciado en Python buscaba respuestas en
