@@ -12,7 +12,7 @@ _--N.de T._
 
 _January 2020: This is my very first blog post from April 2002. I published it blogspot.com and ported here as an historical reference._
 
-
+1.  TOC
 {:toc}
 
 Hace poco (abril del 2002), un no-iniciado en Python buscaba respuestas en
