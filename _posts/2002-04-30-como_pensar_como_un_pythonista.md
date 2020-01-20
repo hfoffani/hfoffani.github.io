@@ -32,15 +32,15 @@ Si conservamos el resultado de dict.values() y
 posteriormente modificamos el diccionario, el resultado
 conservado permanece inalterado.
 
-  >>> dict = {'a':1,'b':2}
-  >>> list = dict.values()
-  >>> list
-  [1, 2]
-  >>> dict['a']=3
-  >>> list
-  [1, 2]
-  >>> dict
-  {'a': 3, 'b': 2}
+    >>> dict = {'a':1,'b':2}
+    >>> list = dict.values()
+    >>> list
+    [1, 2]
+    >>> dict['a']=3
+    >>> list
+    [1, 2]
+    >>> dict
+    {'a': 3, 'b': 2}
 
 Sin embargo, si el diccionario tiene listas como entradas
 en el diccionario, obtengo un comportamiento contraintuitivo
@@ -50,15 +50,15 @@ creada mediante dict.values() aparece actualizada
 automágicamente. Un bonito rasgo, ¡pero nada que hubiera
 esperado!
 
-  >>> dict = {'a':[1],'b':[2]}
-  >>> list = dict.values()
-  >>> list
-  [[1], [2]]
-  >>> dict['a'].append(3)
-  >>> dict
-  {'a': [1, 3], 'b': [2]}
-  >>> list
-  [[1, 3], [2]]
+    >>> dict = {'a':[1],'b':[2]}
+    >>> list = dict.values()
+    >>> list
+    [[1], [2]]
+    >>> dict['a'].append(3)
+    >>> dict
+    {'a': [1, 3], 'b': [2]}
+    >>> list
+    [[1, 3], [2]]
 
 Parece como si en el primer caso una copia es devuelta
 mientras en el segundo caso una referencia a la lista es
@@ -137,7 +137,7 @@ espero que entenderá lo que busco.
 > y posteriormente modificamos el diccionario, el resultado
 > conservado permanece inalterado.
 >
->   >>> dict = {'a':1,'b':2}
+>     >>> dict = {'a':1,'b':2}
 
 Luego de esta sentencia, parecería apropiado dibujar este
 diagrama:
@@ -145,28 +145,28 @@ diagrama:
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://bp3.blogger.com/_z25S_uWyezg/RiTP_-tmW0I/AAAAAAAAARs/1R4dRT8tlJ0/s1600-h/g4.png"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5054393379889503042" src="http://bp3.blogger.com/_z25S_uWyezg/RiTP_-tmW0I/AAAAAAAAARs/1R4dRT8tlJ0/s200/g4.png" style="display:block; margin:0 10px 10px 0; text-align:center;cursor:pointer; cursor:hand;" /></a>
 
 
->   >>> list = dict.values()
+>     >>> list = dict.values()
 
 Ahora este:
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://bp2.blogger.com/_z25S_uWyezg/RiTQNutmW1I/AAAAAAAAAR0/iWdpm-jtsnE/s1600-h/g5.png"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5054393616112704338" src="http://bp2.blogger.com/_z25S_uWyezg/RiTQNutmW1I/AAAAAAAAAR0/iWdpm-jtsnE/s200/g5.png" style="display:block; margin:0 10px 10px 0; text-align:center;cursor:pointer; cursor:hand;" /></a>
 
 
->   >>> list
->   [1, 2]
+>     >>> list
+>     [1, 2]
 
 Lo que por supuesto, no es sorpresa.
 
->   >>> dict['a']=3
+>     >>> dict['a']=3
 
 Ahora esto:
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://bp2.blogger.com/_z25S_uWyezg/RiTQXutmW2I/AAAAAAAAAR8/KdVk_2AEroM/s1600-h/g6.png"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5054393787911396194" src="http://bp2.blogger.com/_z25S_uWyezg/RiTQXutmW2I/AAAAAAAAAR8/KdVk_2AEroM/s200/g6.png" style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" /></a>
 
->   >>> list
->   [1, 2]
->   >>> dict
->   {'a': 3, 'b': 2}
+>     >>> list
+>     [1, 2]
+>     >>> dict
+>     {'a': 3, 'b': 2}
 
 Esto último tampoco deberia sorprender; solamente hay que
 seguir las flechas (ligaduras) del gráfico superior.
@@ -182,28 +182,28 @@ seguir las flechas (ligaduras) del gráfico superior.
 Esto sucede porque no esta pensando en terminos de Nombres,
 Objetos y Ligaduras.
 
->   >>> dict = {'a':[1],'b':[2]}
+>     >>> dict = {'a':[1],'b':[2]}
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://bp0.blogger.com/_z25S_uWyezg/RiTQhOtmW3I/AAAAAAAAASE/J6HAvppza4c/s1600-h/g7.png"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5054393951120153458" src="http://bp0.blogger.com/_z25S_uWyezg/RiTQhOtmW3I/AAAAAAAAASE/J6HAvppza4c/s200/g7.png" style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" /></a>
 
->   >>> list = dict.values()
+>     >>> list = dict.values()
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://bp1.blogger.com/_z25S_uWyezg/RiTQyetmW4I/AAAAAAAAASM/CEudqUzAmwo/s1600-h/g8.png"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5054394247472896898" src="http://bp1.blogger.com/_z25S_uWyezg/RiTQyetmW4I/AAAAAAAAASM/CEudqUzAmwo/s320/g8.png" style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" /></a>
 
->   >>> list
->   [[1], [2]]
+>     >>> list
+>     [[1], [2]]
 
 De nuevo no hay sorpresas aqui.
 
->   >>> dict['a'].append(3)
+>     >>> dict['a'].append(3)
 
 <a onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}" href="http://bp0.blogger.com/_z25S_uWyezg/RiTQ8OtmW5I/AAAAAAAAASU/_Yo_P4jCrzc/s1600-h/g9.png"><img alt="" border="0" id="BLOGGER_PHOTO_ID_5054394414976621458" src="http://bp0.blogger.com/_z25S_uWyezg/RiTQ8OtmW5I/AAAAAAAAASU/_Yo_P4jCrzc/s320/g9.png" style="display:block; margin:0px auto 10px; text-align:center;cursor:pointer; cursor:hand;" /></a>
 
 
->   >>> dict
->   {'a': [1, 3], 'b': [2]}
->   >>> list
->   [[1, 3], [2]]
+>     >>> dict
+>     {'a': [1, 3], 'b': [2]}
+>     >>> list
+>     [[1, 3], [2]]
 
 Y ahora esto tampoco deberia sorprender.
 
@@ -285,25 +285,25 @@ datos entre diferentes objetos array -- una rebanada de un
 array en Numeric comparte sus datos con el array desde se
 obtuvo la rebanada. Es un nuevo objeto, fíjese:
 
-  >>> import Numeric
-  >>> a=Numeric.array(range(6))
-  >>> b=a[:]
-  >>> id(a)
-  136052568
-  >>> id(b)
-  136052728
-  >>>
+    >>> import Numeric
+    >>> a=Numeric.array(range(6))
+    >>> b=a[:]
+    >>> id(a)
+    136052568
+    >>> id(b)
+    136052728
+    >>>
 
 pero esos dos objetos distintos a y b sí comparten datos:
 
-  >>> a
-  array([0, 1, 2, 3, 4, 5])
-  >>> b
-  array([0, 1, 2, 3, 4, 5])
-  >>> a[3]=23
-  >>> b
-  array([ 0, 1, 2, 23, 4, 5])
-  >>>
+    >>> a
+    array([0, 1, 2, 3, 4, 5])
+    >>> b
+    array([0, 1, 2, 3, 4, 5])
+    >>> a[3]=23
+    >>> b
+    array([ 0, 1, 2, 23, 4, 5])
+    >>>
 
 Cada comportamiento tiene detrás un excelente pragmatismo
 --las listas son _mucho_ mas simples al no tener que
@@ -348,10 +348,10 @@ a esos mismos objetos -- si los objetos mutan, ud. ve a los
 objetos mutados desde cualesquier referencia a ellos que
 pueda estar usando.
 
-> >>> dict = {'a':[1],'b':[2]}
-> >>> list = dict.values()
-> >>> list
-> [[1], [2]]
+>     >>> dict = {'a':[1],'b':[2]}
+>     >>> list = dict.values()
+>     >>> list
+>     [[1], [2]]
 
 No use nombres de los tipos built-in como variables: ud. SE
 quemará algún día si lo hace. dict, list, str, tuple, file,
@@ -366,7 +366,7 @@ cierto objeto list en vez de al tipo list en si.
 Use alist, somedict, myfile, lo que sea... nada que ver con
 su problema, solo otro simple consejo !-)
 
-> >>> dict['a'].append(3)
+>     >>> dict['a'].append(3)
 
 Esto no "modifica el diccionario" -- el objeto diccionario
 aún contiene exactamente las mismas referencias, a los
@@ -376,30 +376,30 @@ uno de esos objetos, pero ese es otro tema. Podría
 modificar dicho objeto lista a traves de cualquier
 referencia a él, ejemplo:
 
-  >>> alist=list('ciao')
-  >>> adict={'a':alist}
-  >>> adict
-  {'a': ['c', 'i', 'a', 'o']}
-  >>> alist.pop()
-  'o'
-  >>> adict
-  {'a': ['c', 'i', 'a']}
-  >>>
+    >>> alist=list('ciao')
+    >>> adict={'a':alist}
+    >>> adict
+    {'a': ['c', 'i', 'a', 'o']}
+    >>> alist.pop()
+    'o'
+    >>> adict
+    {'a': ['c', 'i', 'a']}
+    >>>
 
 Si ud. quería que el diccionario adict refiriera a una
 COPIA (una "toma", si prefiere) de los contenidos de alist,
 tendría que haberlo dicho:
 
-  >>> import copy
-  >>> alist=list('ciao')
-  >>> adict={'a':copy.copy(alist)}
-  >>> adict
-  {'a': ['c', 'i', 'a', 'o']}
-  >>> alist.pop()
-  'o'
-  >>> adict
-  {'a': ['c', 'i', 'a', 'o']}
-  >>>
+    >>> import copy
+    >>> alist=list('ciao')
+    >>> adict={'a':copy.copy(alist)}
+    >>> adict
+    {'a': ['c', 'i', 'a', 'o']}
+    >>> alist.pop()
+    'o'
+    >>> adict
+    {'a': ['c', 'i', 'a', 'o']}
+    >>>
 
 y luego la cadena-reprensentación del objeto diccionario podría
 ser aislada de cualquier cambio a la lista que referencia el
@@ -408,10 +408,10 @@ tarea a los objetos a los cuales el objeto diccionario refiere,
 entonces, si quiere aislarlo, ud. necesita copias --de hecho
 tal vez profundas (... bueno no, realmente no, pero... :-)
 
->   >>> dict
->   {'a': [1, 3], 'b': [2]}
->   >>> list
->   [[1, 3], [2]]
+>     >>> dict
+>     {'a': [1, 3], 'b': [2]}
+>     >>> list
+>     [[1, 3], [2]]
 >
 > Parece como si en el primer caso una copia es devuelta
 > mientras en el segundo caso una referencia a la lista es
