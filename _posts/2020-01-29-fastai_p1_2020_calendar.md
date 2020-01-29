@@ -2,6 +2,8 @@
 
 ### Calendar for the 2020 part 1 edition
 
+<div id="calendar-container"></div>
+
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jstimezonedetect/1.0.4/jstz.min.js"></script>
 
 <script type="text/javascript">
@@ -12,4 +14,3 @@
   document.getElementById('calendar-container').innerHTML = iframe_html;
 </script>
 
-<div id="calendar-container"></div>
