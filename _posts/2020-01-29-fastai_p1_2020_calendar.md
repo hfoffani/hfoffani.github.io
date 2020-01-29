@@ -1,6 +1,6 @@
 ## Calendar for the 2020 fast.ai Deep Learning Part 1
 
-A new edition of the renowned course fast.ai Deep Learning was announced. Here is the calendar for the lessons.
+A new edition of the renowned course fast.ai Deep Learning was announced. Apply [here](https://www.usfca.edu/data-institute/certificates/deep-learning-part-one).
 
 You can subscribe or access to [Google Calendar](https://calendar.google.com/calendar?cid=aDE3NGNtcjc1OW1ocnBmaDdtcWpibDJ2YmtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ) or [iCal](https://calendar.google.com/calendar/ical/h174cmr759mhrpfh7mqjbl2vbk%40group.calendar.google.com/public/basic.ics).
 
