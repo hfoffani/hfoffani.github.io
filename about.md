@@ -4,4 +4,4 @@ I believe that happiness in your professional life can be ensured by doing your 
 
 Freedom, Respect, Solidarity, Commitment.
 
-
+Personal page in [About me](https://about.me/herchu)
